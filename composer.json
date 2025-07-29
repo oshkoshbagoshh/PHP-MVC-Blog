@@ -3,18 +3,22 @@
     "description": "Simple blog management system for practice",
     "type": "project",
     "require": {
-        "phpunit/phpunit": "^12.2",
-        "vlucas/phpdotenv": "^5.6"
+        "twig/twig": "v3.21.1",
+        "vlucas/phpdotenv": "^5.6",
+        "fakerphp/faker": "^1.24"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest"
+        ,
         "filp/whoops": "^2.18",
-        "friendsofphp/php-cs-fixer": "v3.84.0"
+        "friendsofphp/php-cs-fixer": "v3.84.0",
+        "phpunit/phpunit": "12.2.7"
 
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Aj\\PhpIntermediateBlog\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
