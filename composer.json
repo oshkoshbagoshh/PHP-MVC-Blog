@@ -1,0 +1,27 @@
+{
+    "name": "aj/php-intermediate-blog",
+    "description": "Simple blog management system for practice",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^12.2",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "filp/whoops": "^2.18",
+        "friendsofphp/php-cs-fixer": "v3.84.0"
+
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aj\\PhpIntermediateBlog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AJ Javadi",
+            "email": "amirjavadi25@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
