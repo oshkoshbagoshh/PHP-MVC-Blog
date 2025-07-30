@@ -3,8 +3,8 @@
  * @Author: AJ Javadi 
  * @Email: amirjavadi25@gmail.com
  * @Date: 2025-07-30 01:30:54 
- * @Last Modified by:   undefined 
- * @Last Modified time: 2025-07-30 01:30:54
+ * @Last Modified by: Someone
+ * @Last Modified time: 2025-07-30 01:54:43
  * @Description: file:///Users/aj/Herd/php-intermediate-blog/zzmisc/data.php
  */
 
@@ -85,5 +85,14 @@ $data = [
 ];
 
 var_dump($data); // For debugging purposes, you can remove this line later.
-json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+$json_data = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+file_put_contents(__DIR__ . '/data.json', $json_data);
+
+// Output the JSON data
+header('Content-Type: application/json');
+echo $json_data;
+// End of data.php
+?>
+
+
 
