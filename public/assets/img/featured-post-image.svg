@@ -1,0 +1,4 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Featured Post Image" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <rect width="800" height="400" fill="#CBD5E1"/>
+    <text x="50%" y="50%" fill="#64748B" dy=".3em" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">Featured Post Image</text>
+</svg>

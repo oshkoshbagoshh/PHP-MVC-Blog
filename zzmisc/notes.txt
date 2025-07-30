@@ -1,0 +1,29 @@
+
+
+
+Based on your README and schema, here are the main classes you should implement (using PSR standards and MVC separation):
+
+Core Model Classes
+User (for authentication, registration, profile)
+Post (CRUD for blog posts)
+Tag (tag management, filtering)
+Category (category management)
+Comment (comments on posts)
+PostTag (many-to-many relation helper)
+PostLike (like system)
+Session (session management, optional)
+Controller Classes
+AuthController (login, registration, logout)
+PostController (CRUD, AJAX endpoints)
+TagController (tag filtering, AJAX)
+CategoryController (category CRUD)
+CommentController (add, delete, AJAX)
+LikeController (like/unlike via AJAX)
+ApiController (for RESTful endpoints if needed)
+Utility/Service Classes
+Database (PDO connection, query helpers)
+CSRFToken (CSRF protection)
+Validator (input validation)
+ImageUploader (file/image upload security)
+Factory (for seeding/fake data in tests)
+Example Directory Structure
