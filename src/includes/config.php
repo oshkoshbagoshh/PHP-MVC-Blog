@@ -1,28 +1,27 @@
 <?php
+/*
+ * ================================================================================================
+ * *                                           INFO
+ *
+ *
+ *   Context: Path: src/includes/config.php
+ *  Configuration file for the PHP Intermediate Blog project.
+ *  This file contains various configuration settings used throughout the application.
+ *
+ * ================================================================================================
+ */
 
 /**
  * Database
  */
-class Database
-{
-    private $pdo;
 
-    public function __construct()
-    {
-        $driver = 'pgsql';
-        $host = 'localhost';
-        $dbname = 'blog_db';
-        $username = 'blog_user';
-        $password = 'blog_password';
+require_once __DIR__ . '/../src/includes/constants.php';
 
-        $dsn = "$driver:host=$host;dbname=$dbname";
-        $this->pdo = new PDO($dsn, $username, $password, [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-        ]);
-    }
 
-    public function getConnection()
-    {
-        return $this->pdo;
-    }
-}
+// get constants
+// get environment variables using getenv() or $_ENV
+// Example: $dbHost = getenv('DB_HOST') ?: 'localhost';
+
+
+
+

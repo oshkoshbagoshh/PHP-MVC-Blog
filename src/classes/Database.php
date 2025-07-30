@@ -1,6 +1,10 @@
 <?php
 
 require_once __DIR__ . '/../src/includes/config.php';
+require_once __DIR__ . '../src/includes/constants.php';
+
+
+
 
 // // Initialize the database connection
 // $database = new Database();
@@ -17,7 +21,11 @@ class Database {
     private function connect()
     {
         try {
-            $this->pdo = new PDO('mysql:host=localhost;dbname=blog', 'root', '');
+            $this->pdo = new PDO(
+                DB_DRIVER . ':host=' . DB_HOST . ';dbname=' . DB_NAME,
+                DB_USER,
+                DB_PASSWORD
+            );
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             echo 'Connection failed: ' . $e->getMessage();

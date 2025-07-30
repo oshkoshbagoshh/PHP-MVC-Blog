@@ -1,0 +1,13 @@
+{# filepath: templates/partials/product_grid.twig #}
+<div class="post-grid">
+    {% for product in products %}
+        <div class="post-card">
+            <img src="{{ product.image|e }}" alt="Product Image" class="post-image" />
+            <div class="post-content">
+                <div class="post-title">{{ product.name|e }}</div>
+                <div class="post-excerpt">${{ product.price|e }}</div>
+                <div class="post-meta">{{ product.rating|e }} stars</div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

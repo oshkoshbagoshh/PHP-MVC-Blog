@@ -1,3 +1,37 @@
+<?php
+
+/*
+ * ================================================================================================
+ * *                                           INFO
+ *
+ *
+ *   Context: Path: public/index.php
+ *  Entry point for the PHP Intermediate Blog project.
+ *  This file initializes the application and includes necessary configurations.
+ *
+ * ================================================================================================
+ */
+
+require_once __DIR__ . '/../src/includes/config.php';
+require_once __DIR__ . '/../src/includes/constants.php';
+require_once __DIR__ . '/../src/classes/Database.php';
+require_once __DIR__ . '/../src/includes/functions.php';
+
+
+/**==============================================
+ * *                   INFO
+ *   *  This file serves as the entry point for the blog management system.
+ *   *  It initializes the application, sets up the database connection,
+ *   *  and handles the routing for the application.
+ *  *  The application uses a simple MVC structure with Twig for templating.
+ * autoloading is handled by Composer.
+ *=============================================**/
+
+// autoloading 
+require_once __DIR__ . '/../vendor/autoload.php';
+
+
+?>
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -84,7 +118,7 @@
 </footer>
 
 <!--Script-->
-<!--<script src="assets/js/script.js"></script>-->
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>

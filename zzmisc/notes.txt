@@ -27,3 +27,17 @@ Validator (input validation)
 ImageUploader (file/image upload security)
 Factory (for seeding/fake data in tests)
 Example Directory Structure
+
+
+// templates / views 
+
+
+templates/
+├── layout.twig
+├── home.twig
+├── partials/
+│   ├── header.twig
+│   ├── search_bar.twig
+│   ├── categories.twig
+│   ├── product_grid.twig
+│   └── footer.twig
