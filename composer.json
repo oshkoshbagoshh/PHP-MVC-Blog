@@ -3,10 +3,11 @@
     "description": "Simple blog management system for practice",
     "type": "project",
     "require": {
+        "php": ">8.4",
         "twig/twig": "v3.21.1",
-        "vlucas/phpdotenv": "^5.6",
-        "fakerphp/faker": "^1.24",
-        "league/climate": "^3.10"
+        "league/climate": "^3.10",
+      "league/csv": "@stable",
+      "ext-pdo": "*"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
@@ -15,7 +16,8 @@
         "friendsofphp/php-cs-fixer": "v3.84.0",
         "phpunit/phpunit": "12.2.7",
         "monolog/monolog": "^3.4",
-        "fakerphp/faker": "^1.24"
+        "fakerphp/faker": "^1.24",
+      "vlucas/phpdotenv": "@stable"
 
     },
     "license": "MIT",
@@ -35,5 +37,9 @@
             "email": "amirjavadi25@gmail.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+  "scripts": {
+    "serve":"php -S 127.0.0.1:8000 -t public",
+    "seed": "php bin/seed.php"
+  }
 }
