@@ -49,7 +49,7 @@ $data = [
             'content' => 'This is a comment on the second post.',
             'created_at' => '2025-07-30 02:10:00'
         ]
-        ],
+    ],
     'categories' => [
         [
             'id' => 1,
@@ -85,14 +85,14 @@ $data = [
 ];
 
 var_dump($data); // For debugging purposes, you can remove this line later.
-$json_data = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+$json_data = json_encode($data, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 file_put_contents(__DIR__ . '/data.json', $json_data);
 
 // Output the JSON data
 header('Content-Type: application/json');
 echo $json_data;
 // End of data.php
-?>
+
 
 
 

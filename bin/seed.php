@@ -32,7 +32,7 @@ $pass = $env('DB_PASSWORD', '');
 
 $dsn = "pgsql:host={$host};port={$port};dbname={$db}";
 
-$seedFile = __DIR__ . '/../src/database/seed.sql';
+$seedFile = __DIR__ . '/../src/Database/seed.sql';
 if (!file_exists($seedFile)) {
     fwrite(STDERR, "Seed file not found at: {$seedFile}\n");
     exit(1);

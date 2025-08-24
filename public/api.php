@@ -17,11 +17,11 @@
 
 // require_once __DIR__ . '../src/includes/config.php';
 
-require_once __DIR__ . '/../src/includes/constants.php';
+require_once __DIR__ . '/../src/Includes/constants.php';
 require_once __DIR__ . '/../src/classes/Database.php';
 // require_once __DIR__ . '/../src/includes/functions.php';
 // require_once __DIR__ . '/../src/includes/config.php';
-require_once __DIR__ . '/../src/includes/config.php';
+require_once __DIR__ . '/../src/Includes/config.php';
 
 // Initialize the database connection
 $database = new Database();

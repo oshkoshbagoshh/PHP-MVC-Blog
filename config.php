@@ -5,7 +5,7 @@
  */
 class Database
 {
-    private $pdo;
+    private PDO $pdo;
 
     public function __construct()
     {
@@ -21,7 +21,7 @@ class Database
         ]);
     }
 
-    public function getConnection()
+    public function getConnection(): PDO
     {
         return $this->pdo;
     }
