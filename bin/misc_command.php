@@ -45,7 +45,7 @@ $climate->info("Hello, $name!");
 //* ASK
 $climate->ask('What is your favorite color?');
 $color = $climate->input('Please enter your favorite color:')->prompt();
-$climate->info("Your favorite color is $color."); 
+$climate->info("Your favorite color is $color.");
 
 //* TABLE
 $data = [
@@ -94,26 +94,30 @@ if ($climate->confirm('Do you want to proceed?')->confirmed()) {
     $climate->info('You chose to proceed.');
 } else {
     $climate->info('You chose not to proceed.');
-}   
+}
 
 //* CHOICE
 $choice = $climate->radio('Please choose an option:', ['Option 1', 'Option 2', 'Option 3'])
     ->defaultTo('Option 1')
     ->prompt();
-$climate->info("You chose: $choice");  
+$climate->info("You chose: $choice");
 //* SLIDER
 $sliderValue = $climate->slider('Please select a value between 1 and 10:', 1, 10)
     ->defaultTo(5)
     ->prompt();
-$climate->info("You selected: $sliderValue");  
+$climate->info("You selected: $sliderValue");
 //* PASSWORD
 $password = $climate->password('Please enter your password:')
     ->prompt();
-$climate->info('Your password has been set.'); 
+$climate->info('Your password has been set.');
 
 //* MULTI-SELECT
-$multiSelect = $climate->checkboxes('Please select multiple options:', ['Option A
-', 'Option B', 'Option C'])
+$multiSelect = $climate->checkboxes('Please select multiple options:', [
+    'Option A
+',
+    'Option B',
+    'Option C'
+])
     ->defaultTo(['Option A'])
     ->prompt();
 $climate->info("You selected: " . implode(', ', $multiSelect));

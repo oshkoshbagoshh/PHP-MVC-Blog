@@ -16,8 +16,6 @@ require_once '../src/Includes/functions.php';
 use League\Plates\Engine;
 
 
-
-
 //// Initialize Plates
 //$templates = new Engine('templates');
 //

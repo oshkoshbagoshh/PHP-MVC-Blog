@@ -4,13 +4,12 @@
 //require_once  '../includes/constants.php';
 
 
-
-
 // // Initialize the database connection
 // $database = new Database();
 // $pdo = $database->getConnection();
 
-class Database {
+class Database
+{
     private $pdo;
 
     public function __construct()

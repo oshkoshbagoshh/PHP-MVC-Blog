@@ -51,8 +51,9 @@
 
 <footer class="card" style="margin-top: 3rem;">
     <div class="card-body" style="text-align: center; background: var(--dark-bg); color: white;">
-        <?= $current_year = Date( 'Y');
-        $this->section('footer', '<p>&copy; ' . $current_year ?? $current_year = Date('Y')  . ' ' . '. All rights reserved.</p>') ?>
+        <?= $current_year = Date('Y');
+        $this->section('footer',
+                '<p>&copy; ' . $current_year ?? $current_year = Date('Y') . ' ' . '. All rights reserved.</p>') ?>
     </div>
 </footer>
 
