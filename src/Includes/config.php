@@ -15,7 +15,7 @@
  * Database
  */
 
-require_once __DIR__ . '/../src/includes/constants.php';
+require_once 'constants.php';
 
 
 // get constants

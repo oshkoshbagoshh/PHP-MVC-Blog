@@ -4,10 +4,10 @@
     "type": "project",
     "require": {
         "php": ">8.4",
-        "twig/twig": "v3.21.1",
         "league/climate": "^3.10",
       "league/csv": "@stable",
-      "ext-pdo": "*"
+      "ext-pdo": "*",
+        "league/plates": "^3.6"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
