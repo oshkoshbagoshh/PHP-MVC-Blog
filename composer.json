@@ -3,25 +3,31 @@
   "description": "Simple blog management system for practice",
   "type": "project",
   "require": {
-    "php": ">8.4",
+    "php": ">=8.4",
+    "ext-pdo": "*",
+    "monolog/monolog": "@stable",
     "league/climate": "^3.10",
     "league/csv": "@stable",
-    "ext-pdo": "*",
-    "league/plates": "^3.6"
+    "league/plates": "^3.6",
+    "league/event": "@stable",
+    "league/flysystem": "@stable",
+    "symfony/console": "^7.3"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
     "filp/whoops": "^2.18",
     "friendsofphp/php-cs-fixer": "v3.84.0",
     "phpunit/phpunit": "12.2.7",
-    "monolog/monolog": "^3.4",
     "fakerphp/faker": "^1.24",
-    "vlucas/phpdotenv": "@stable"
+    "vlucas/phpdotenv": "@stable",
+    "php-debugbar/php-debugbar": "@stable",
+    "symfony/panther": "^2.2"
   },
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "App\\": "src/"
+      "App\\": "src/",
+      "App\\Database\\": "src/database"
     }
   },
   "autoload-dev": {
@@ -38,6 +44,6 @@
   "minimum-stability": "stable",
   "scripts": {
     "serve": "php -S 127.0.0.1:8000 -t public",
-    "seed": "php bin/seed.php"
+    "seed": "php src/Bin/seed.php"
   }
 }

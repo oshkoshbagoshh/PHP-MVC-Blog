@@ -9,5 +9,6 @@ services:
   redis:
     version: 7.0.0
     port: '6379'
+
 integrations:
   forge: { }

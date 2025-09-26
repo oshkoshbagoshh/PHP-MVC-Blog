@@ -8,6 +8,12 @@
 // $database = new Database();
 // $pdo = $database->getConnection();
 
+namespace App\Database;
+
+use App\PDO;
+use App\PDOException;
+use PDOException;
+
 class Database
 {
     private $pdo;

@@ -6,7 +6,7 @@
     <title><?= $this->section('title', 'My Blog') ?></title>
 
     <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
