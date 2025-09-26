@@ -1,5 +1,5 @@
 {
-  "name": "aj/php-intermediate-blog",
+  "name": "oshkoshbagoshh/notanothercms",
   "description": "Simple blog management system for practice",
   "type": "project",
   "require": {
@@ -44,6 +44,7 @@
   "minimum-stability": "stable",
   "scripts": {
     "serve": "php -S 127.0.0.1:8000 -t public",
-    "seed": "php src/Bin/seed.php"
+    "seed": "php src/console/seed.php",
+    "test": "phpunit"
   }
 }

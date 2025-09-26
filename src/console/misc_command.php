@@ -9,9 +9,6 @@
  *  miscellaneous cli commands for the blog management system
  */
 
-
-require_once __DIR__ . "/../vendor/autoload.php";
-
 $climate = new \League\CLImate\CLImate;
 
 $climate->red('Whoa now this text is red.');
