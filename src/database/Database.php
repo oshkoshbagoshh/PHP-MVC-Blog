@@ -4,13 +4,18 @@
 //require_once  '../includes/constants.php';
 
 
-
-
 // // Initialize the database connection
 // $database = new Database();
 // $pdo = $database->getConnection();
 
-class Database {
+namespace App\Database;
+
+use App\PDO;
+use App\PDOException;
+use PDOException;
+
+class Database
+{
     private $pdo;
 
     public function __construct()

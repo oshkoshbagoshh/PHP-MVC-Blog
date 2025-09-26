@@ -6,7 +6,7 @@
     <title><?= $this->section('title', 'My Blog') ?></title>
 
     <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -51,8 +51,9 @@
 
 <footer class="card" style="margin-top: 3rem;">
     <div class="card-body" style="text-align: center; background: var(--dark-bg); color: white;">
-        <?= $current_year = Date( 'Y');
-        $this->section('footer', '<p>&copy; ' . $current_year ?? $current_year = Date('Y')  . ' ' . '. All rights reserved.</p>') ?>
+        <?= $current_year = Date('Y');
+        $this->section('footer',
+                '<p>&copy; ' . $current_year ?? $current_year = Date('Y') . ' ' . '. All rights reserved.</p>') ?>
     </div>
 </footer>
 

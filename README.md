@@ -1,20 +1,25 @@
 # Simple Blog Management System - PHP Practice Project
 
 ## Project Overview
-Create a comprehensive blog management system using PHP, PostgreSQL, and jQuery. This intermediate-level project focuses on CRUD operations, user authentication, security best practices, and modern web development techniques.
+
+Create a comprehensive blog management system using PHP, PostgreSQL, and jQuery. This intermediate-level project focuses
+on CRUD operations, user authentication, security best practices, and modern web development techniques.
 
 ---
 
 ## Core Requirements
 
 ### 1. User Authentication System
+
 - **User Registration**: Secure registration with unique usernames and hashed passwords
 - **User Login/Logout**: Session-based authentication with proper session management
 - **Access Control**: Restrict create/edit/delete operations to authenticated users only
 - **Password Security**: Use `password_hash()` and `password_verify()` functions
 
 ### 2. Blog Post Management (CRUD)
+
 Each blog post must include:
+
 - `id` (auto-increment primary key)
 - `title` (varchar, max 255 characters)
 - `content` (text, rich content support)
@@ -24,12 +29,14 @@ Each blog post must include:
 - `status` (draft, published, archived)
 
 **Required Operations:**
+
 - **Create**: Add new blog posts with validation
 - **Read**: View post list and individual post details
 - **Update**: Edit existing posts (author only)
 - **Delete**: Remove posts with confirmation (author only)
 
 ### 3. Advanced Features
+
 - **Tag System**: Filter posts by tags with dynamic loading
 - **Search Functionality**: Search posts by title and content
 - **Pagination**: Limit posts per page (10-15 posts)
@@ -37,6 +44,7 @@ Each blog post must include:
 - **Image Upload**: Allow featured images for posts
 
 ### 4. jQuery AJAX Integration (Required)
+
 - **Post Deletion**: Delete posts without page reload
 - **Tag Filtering**: Dynamic post filtering by tags
 - **Search**: Real-time search suggestions
@@ -44,6 +52,7 @@ Each blog post must include:
 - **Comment System**: Add comments without page refresh
 
 ### 5. Security Requirements
+
 - **SQL Injection Prevention**: Use prepared statements exclusively
 - **XSS Protection**: Sanitize all output using `htmlspecialchars()`
 - **CSRF Protection**: Implement CSRF tokens for forms
@@ -679,54 +688,54 @@ body {
 
 ### Functionality (40 points)
 
-| Feature | Points | Requirements | ✓ |
-|---------|--------|--------------|---|
-| User Registration | 5 | Unique usernames, hashed passwords, validation | |
-| User Login/Logout | 5 | Session management, secure authentication | |
-| Post Creation | 5 | Form validation, rich text editor, image upload | |
-| Post Listing | 5 | Pagination, search, filtering | |
-| Post Detail View | 5 | Full content display, comments, likes | |
-| Post Editing | 5 | Author-only access, form pre-population | |
-| Post Deletion | 5 | Confirmation dialog, AJAX implementation | |
-| Tag System | 5 | Dynamic filtering, tag management | |
+| Feature           | Points | Requirements                                    | ✓ |
+|-------------------|--------|-------------------------------------------------|---|
+| User Registration | 5      | Unique usernames, hashed passwords, validation  |   |
+| User Login/Logout | 5      | Session management, secure authentication       |   |
+| Post Creation     | 5      | Form validation, rich text editor, image upload |   |
+| Post Listing      | 5      | Pagination, search, filtering                   |   |
+| Post Detail View  | 5      | Full content display, comments, likes           |   |
+| Post Editing      | 5      | Author-only access, form pre-population         |   |
+| Post Deletion     | 5      | Confirmation dialog, AJAX implementation        |   |
+| Tag System        | 5      | Dynamic filtering, tag management               |   |
 
 ### jQuery AJAX Implementation (25 points)
 
-| Feature | Points | Requirements | ✓ |
-|---------|--------|--------------|---|
-| AJAX Post Deletion | 5 | No page reload, confirmation dialog | |
-| AJAX Tag Filtering | 5 | Dynamic post loading, smooth transitions | |
-| AJAX Search | 5 | Real-time suggestions, debounced input | |
-| AJAX Like System | 5 | Toggle likes, update counts | |
-| AJAX Comments | 5 | Add comments without refresh, validation | |
+| Feature            | Points | Requirements                             | ✓ |
+|--------------------|--------|------------------------------------------|---|
+| AJAX Post Deletion | 5      | No page reload, confirmation dialog      |   |
+| AJAX Tag Filtering | 5      | Dynamic post loading, smooth transitions |   |
+| AJAX Search        | 5      | Real-time suggestions, debounced input   |   |
+| AJAX Like System   | 5      | Toggle likes, update counts              |   |
+| AJAX Comments      | 5      | Add comments without refresh, validation |   |
 
 ### Security (20 points)
 
-| Feature | Points | Requirements | ✓ |
-|---------|--------|--------------|---|
-| SQL Injection Prevention | 5 | Prepared statements only | |
-| XSS Protection | 5 | Output sanitization, CSP headers | |
-| CSRF Protection | 5 | Token validation on forms | |
-| Input Validation | 5 | Server-side validation, error handling | |
+| Feature                  | Points | Requirements                           | ✓ |
+|--------------------------|--------|----------------------------------------|---|
+| SQL Injection Prevention | 5      | Prepared statements only               |   |
+| XSS Protection           | 5      | Output sanitization, CSP headers       |   |
+| CSRF Protection          | 5      | Token validation on forms              |   |
+| Input Validation         | 5      | Server-side validation, error handling |   |
 
 ### Code Quality (10 points)
 
-| Feature | Points | Requirements | ✓ |
-|---------|--------|--------------|---|
-| Code Organization | 3 | MVC pattern, separation of concerns | |
-| Documentation | 2 | Comments, README file | |
-| Error Handling | 3 | Try-catch blocks, user-friendly errors | |
-| Code Style | 2 | Consistent formatting, PSR standards | |
+| Feature           | Points | Requirements                           | ✓ |
+|-------------------|--------|----------------------------------------|---|
+| Code Organization | 3      | MVC pattern, separation of concerns    |   |
+| Documentation     | 2      | Comments, README file                  |   |
+| Error Handling    | 3      | Try-catch blocks, user-friendly errors |   |
+| Code Style        | 2      | Consistent formatting, PSR standards   |   |
 
 ### Bonus Features (5 points)
 
-| Feature | Points | Requirements | ✓ |
-|---------|--------|--------------|---|
-| Rich Text Editor | 1 | TinyMCE or CKEditor integration | |
-| Image Upload | 1 | File validation, thumbnail generation | |
-| User Roles | 1 | Admin/Editor/User permissions | |
-| Email Notifications | 1 | Comment notifications, welcome emails | |
-| API Endpoints | 1 | RESTful API for mobile app | |
+| Feature             | Points | Requirements                          | ✓ |
+|---------------------|--------|---------------------------------------|---|
+| Rich Text Editor    | 1      | TinyMCE or CKEditor integration       |   |
+| Image Upload        | 1      | File validation, thumbnail generation |   |
+| User Roles          | 1      | Admin/Editor/User permissions         |   |
+| Email Notifications | 1      | Comment notifications, welcome emails |   |
+| API Endpoints       | 1      | RESTful API for mobile app            |   |
 
 ---
 
@@ -735,6 +744,7 @@ body {
 ### Manual Tests
 
 #### Authentication Tests
+
 - [ ] Register new user with valid data
 - [ ] Register with existing username (should fail)
 - [ ] Register with invalid email format (should fail)
@@ -744,6 +754,7 @@ body {
 - [ ] Logout functionality works correctly
 
 #### Post Management Tests
+
 - [ ] Create post with valid data
 - [ ] Create post with empty title (should fail)
 - [ ] Create post with empty content (should fail)
@@ -755,6 +766,7 @@ body {
 - [ ] View individual post details
 
 #### AJAX Functionality Tests
+
 - [ ] Delete post via AJAX without page reload
 - [ ] Filter posts by tag without page reload
 - [ ] Search posts with real-time results
@@ -763,6 +775,7 @@ body {
 - [ ] Form validation errors display correctly
 
 #### Security Tests
+
 - [ ] Try SQL injection in login form
 - [ ] Try SQL injection in search
 - [ ] Try XSS in post content
@@ -806,6 +819,7 @@ public function testAjaxPostDeletion()
 ## Submission Requirements
 
 ### File Structure
+
 ```
 blog-management-system/
 ├── README.md
@@ -830,6 +844,7 @@ blog-management-system/
 ```
 
 ### Documentation Required
+
 1. **README.md** with setup instructions
 2. **API Documentation** for AJAX endpoints
 3. **Database Schema** with relationships
@@ -837,6 +852,7 @@ blog-management-system/
 5. **Known Issues** and limitations
 
 ### Submission Checklist
+
 - [ ] All functionality working as specified
 - [ ] Security measures implemented
 - [ ] AJAX features working without page reload
@@ -860,6 +876,7 @@ blog-management-system/
 **Total Points: 100 + 5 bonus points**
 
 **Grading Scale:**
+
 - A: 90-100 points
 - B: 80-89 points
 - C: 70-79 points

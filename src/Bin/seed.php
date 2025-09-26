@@ -26,7 +26,7 @@ if ($driver !== 'pgsql') {
 
 $host = $env('DB_HOST', '127.0.0.1');
 $port = $env('DB_PORT', '5432');
-$db   = $env('DB_DATABASE', 'blog');
+$db = $env('DB_DATABASE', 'blog');
 $user = $env('DB_USERNAME', 'postgres');
 $pass = $env('DB_PASSWORD', '');
 

@@ -1,21 +1,34 @@
 <?php
-/***
- *
- *
- *  COMMENT HEADER BLOCK
- */
 
-require_once '../vendor/autoload.php';
-require_once '../src/Includes/constants.php';
-require_once '../src/Includes/config.php';
-require_once '../src/Includes/functions.php';
+
+/// Require the Composer autoloader, if not already loaded
+
+//
+//
+//use DebugBar\StandardDebugBar;
+
+//$debugbar = new StandardDebugBar();
+//$debugbarRenderer = $debugbar->getJavascriptRenderer();
+
+//$debugbar["messages"]->addMessage("hello world!");
+?>
+<html>
+    <head>
+        <?php echo $debugbarRenderer->renderHead() ?>
+    </head>
+    <body>
+        ...
+        <?php echo $debugbarRenderer->render() ?>
+    </body>
+</html>
+
+
+
 
 // base dir
 
 
 use League\Plates\Engine;
-
-
 
 
 //// Initialize Plates

@@ -1,0 +1,7 @@
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Tag Icon"
+     preserveAspectRatio="xMidYMid meet" focusable="false">
+    <rect width="50" height="50" fill="#3B82F6" rx="8" ry="8"/>
+    <text x="50%" y="50%" fill="white" dy=".3em" font-family="Arial, sans-serif" font-size="16" font-weight="bold"
+          text-anchor="middle">Tag
+    </text>
+</svg>
